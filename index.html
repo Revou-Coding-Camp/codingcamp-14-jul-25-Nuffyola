@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Agent</title>
+  <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="./Image/Logo.png" alt="Travel Logo" class="logo-img"/>
+        <h2>NuffySite</h2>
+      </div>
+      <nav>
+        <svg xmlns="http://www.w3.org/2000/svg" class="menu-btn" height="40px" viewBox="0 -960 960 960" width="40px" fill="#bdae88"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="close-btn" height="40px" viewBox="0 -960 960 960" width="40px" fill="#bdae88"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg>
+        <div class="nav-bar">
+          <a href="#" class="nav-btn">Home</a>
+          <a href="#packages" class="nav-btn">Packages</a>
+          <a href="#contact-us" class="nav-btn">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home">
+        <section class="heading">
+          <div class="hero-text">
+            <h1>Your Trusted Travel Agent</h1>
+            <p>Your happiness is our priority</p>
+          </div>
+        </section>
+
+        <section class="main-content">
+          <figure>
+            <figcaption>
+              <img src="./Image/traveler.jpg" alt="Customer Review" class="figure" />
+              "My vacation was amazing thanks to my travel agent!"
+            </figcaption>
+            <section class="user">
+              <img src="./Image/customer.jpg" alt="Profile Picture" class="profile-pict" />
+              <div class="user-profile">
+                <h3>Florence Hughes</h3>
+                <p>Homemaker, 28 years old</p>
+              </div>
+            </section>
+
+            <section class="features">
+              <h3>Learn more about what we offer. Discover how our services can help you create unforgettable travel experiences.</h3>
+                <section class="feature-list">
+                    <h3 class="bullet-list">1</h3>
+                    <p>Tailored travel packages designed to suit your needs and preferences.</p>
+                </section>
+                <section class="feature-list">
+                    <h3 class="bullet-list">2</h3>
+                    <p>Expert guidance to help you explore top destinations with ease.</p>
+                </section>
+                 <section class="feature-list">
+                    <h3 class="bullet-list">3</h3>
+                    <p>Customer support that ensures your journey is stress-free and enjoyable.</p>
+                 </section>
+            </section>
+          </figure>
+
+          <aside>
+            <form action="/submit-contact" method="post" id="contact-us">
+              <h2 style="text-align: center;">Contact Us</h2>
+              <p>Our sales team will contact you within 24 hours after we receive your data.</p>
+
+              <label for="name" class="label">Your Name:</label>
+              <input type="text" name="name" id="name" placeholder="First and last name" required />
+
+              <label for="email" class="label">Email Address:</label>
+              <input type="email" name="email" id="email" placeholder="example@email.com" required />
+
+              <label for="option" class="label">What are you interested in?</label>
+              <input list="option-list" id="option" name="option" placeholder="Choose a destination" required />
+              <datalist id="option-list">
+                <option value="Bali"></option>
+                <option value="Japan"></option>
+                <option value="Singapore"></option>
+                <option value="Bandung"></option>
+                <option value="Surabaya"></option>
+                <option value="Other Destination"></option>
+              </datalist>
+
+              <input type="submit" value="SEND" />
+            </form>
+          </aside>
+        </section>
+
+        </section>
+
+      <section class="package" id="packages">
+        <h1 class="package-heading">Our Packages</h1>
+        <section class="package-list">
+          <section class="list-travel">
+            <img src="./Image/bali.jpg" alt="Bali" class="icon" />
+            <div class="travel-destiny">
+              <h2>Bali</h2>
+              <p>Explore cultural heritage and enjoy delicious local cuisine in Bali.</p>
+            </div>
+          </section>
+          <section class="list-travel">
+            <img src="./Image/japan.jpg" alt="Japan" class="icon" />
+            <div class="travel-destiny">
+              <h2>Japan</h2>
+              <p>Experience the rich culture and culinary delights of Japan.</p>
+            </div>
+          </section>
+          <section class="list-travel">
+            <img src="./Image/singapore.jpg" alt="Singapore" class="icon" />
+            <div class="travel-destiny">
+              <h2>Singapore</h2>
+              <p>Discover modern attractions and vibrant culture in Singapore.</p>
+            </div>
+          </section>
+          <section class="list-travel">
+            <img src="./Image/bandung.jpg" alt="Bandung" class="icon" />
+            <div class="travel-destiny">
+              <h2>Bandung</h2>
+              <p>Shop, eat, and explore the natural beauty of Bandung.</p>
+            </div>
+          </section>
+          <section class="list-travel">
+            <img src="./Image/Surabaya.jpg" alt="Surabaya" class="icon" />
+            <div class="travel-destiny">
+              <h2>Surabaya</h2>
+              <p>Visit historical landmarks and experience the vibrant city life of Surabaya.</p>
+            </div>
+          </section>
+          <section class="list-travel">
+            <img src="./Image/airplane-2.jpg" alt="Other Destination" class="icon" />
+            <div class="travel-destiny">
+              <h2>Other Destination</h2>
+              <p>Tell us where you want to go, and we’ll take care of the rest!</p>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <h1>Ready for Your Next Adventure?</h1>
+      <p>Start planning today and let us help you create unforgettable memories. Travel with confidence, travel with us.</p>
+      <a href="#contact-us" class="submit-btn">Get Started</a>
+      <span style="text-align: center; margin: 10px; background-color: #111; color: #aaa; font-size: 0.9em;">
+      &copy; 2025 Nuffysite. All rights reserved.copy</span>
+    </footer>
+  </div>
+  <script src="./Java Script/script.js"></script>
+</body>
+</html>
